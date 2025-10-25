@@ -2,12 +2,11 @@
 
 <p align="justify">
 This project is focused on designing a SQL-based data pipeline for DEC that ingests, transforms, and aggregate NYC Taxi data for the year 2024.
-The system requirements includes two data loading strategies namely: full and incremental loading.
 </p>
 
 
 ## About the data
-The datasets are records of public taxi transactions in NYC. They were collected and provided to the NYC Taxi and Limousine Commission (TLC) by technology providers authorized under the Taxicab & Livery Passenger Enhancement Programs (TPEP/LPEP). 
+The datasets are records of yellow taxi transactions in NYC. They were collected and provided to the NYC Taxi and Limousine Commission (TLC) by technology providers authorized under the Taxicab & Livery Passenger Enhancement Programs (TPEP/LPEP). 
 
 The datasets has the following fields:
 
@@ -32,5 +31,13 @@ The datasets has the following fields:
 | total_amount | Total amount charged to passengers (excludes cash tips). |
 | congestion_surcharge | Total amount collected in trip for NYS congestion surcharge. |
 | airport_fee | For pickups only at LaGuardia and John F. Kennedy Airports. |
+
+
+## Project requirements
+- The clear architectural design
+- Comprehensive documentation explaining design choices and approach
+- The system requirements includes two data loading strategies; full and incremental loading.
+
+
 
 
