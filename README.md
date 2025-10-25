@@ -7,7 +7,7 @@ The system requirements includes two data loading strategies namely: full and in
 
 
 ## About the data
-The datasets are records of public taxi transactions in NYC. They were collected and provided to the NYC Taxi and Limousine Commission (TLC) by technology providers authorized under the Taxicab & Livery Passenger Enhancement Programs (TPEP/LPEP). The trip data was not created by the TLC, and TLC makes no representations as to the accuracy of these data.
+The datasets are records of public taxi transactions in NYC. They were collected and provided to the NYC Taxi and Limousine Commission (TLC) by technology providers authorized under the Taxicab & Livery Passenger Enhancement Programs (TPEP/LPEP). 
 
 The datasets has the following fields:
 
