@@ -10,11 +10,15 @@ EXEC bronze.load_nycbronze;
 
 CREATE OR ALTER PROCEDURE bronze.load_nycbronze AS
 BEGIN
+  
 BEGIN TRY
 DECLARE @load_start_time DATETIME , @load_end_time DATETIME
 
 
 SET @load_start_time = GETDATE() -- get the exact time the file starts loading
+
+-- truncates table
+TRUNCATE TABLE bronze.yellow_taxi;
 
 -- loading the bronze layer
 BULK INSERT bronze.yellow_taxi
