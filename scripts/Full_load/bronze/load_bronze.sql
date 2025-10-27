@@ -3,7 +3,7 @@ The stored procedure pulls data from the source file into the defined table.
 
 To execute it, you simply run  EXEC bronze.load_nycbronze;
 
-In situations where the procedure fails to load the data, the scripts information about the error encountered.
+In situations where the procedure fails to load the data, the scripts reports information about the error encountered.
 */
 EXEC bronze.load_nycbronze;
 
