@@ -1,5 +1,5 @@
 /*
-This script drops silver.yellow_taxi table if it already exist and recreate it
+This script drops silver.yellow_taxi table if it already exist and recreate another one.
 */
 
 -- creating the table structure
