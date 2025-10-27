@@ -39,5 +39,7 @@ The datasets has the following fields:
 - The system requirements includes two data loading strategies; full and incremental loading.
 
 
+![Pipeline Diagram](C:\Users\USER\Downloads\architecture design)
+
 
 
