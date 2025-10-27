@@ -4,6 +4,14 @@
 This project is focused on designing a SQL-based data pipeline for DEC that ingests, transforms, and aggregate NYC Taxi data for the year 2024.
 </p>
 
+## Data Architecture
+
+![Pipeline Diagram](docs/architecture_design.PNG)
+
+
+
+
+
 
 ## About the data
 The datasets are records of yellow taxi transactions in NYC. They were collected and provided to the NYC Taxi and Limousine Commission (TLC) by technology providers authorized under the Taxicab & Livery Passenger Enhancement Programs (TPEP/LPEP). 
@@ -39,7 +47,6 @@ The datasets has the following fields:
 - The system requirements includes two data loading strategies; full and incremental loading.
 
 
-![Pipeline Diagram](C:\Users\USER\Downloads\architecture design)
 
 
 
