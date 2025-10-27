@@ -1,7 +1,7 @@
 # NYC Taxi Data Pipeline 🚕
 
 <p align="justify">
-This project is focused on designing a SQL-based data pipeline for DEC - one that ingests, transforms, and aggregate NYC Taxi data for the year 2024 making the data ready for downstream stakeholders usage (analytics, machine learning)
+This project focuses on designing a SQL-based data pipeline that ingests, transforms, and aggregate NYC Yellow Taxi Trips 2024 dataset preparing the data  for downstream stakeholders use in analytics and machine learning.
 </p>
 
 ## Data Architecture
