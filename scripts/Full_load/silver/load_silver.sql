@@ -1,6 +1,7 @@
 /*
 This scripts loads the transformed that into the silver layer. 
-The code wrapped in a stored procedure  AS  silver.load_nycsilver for easy execution/run.
+The code wrapped in a stored procedure  AS  ``silver.load_nycsilver`` for easy execution/run.
+To use procedure, simply run EXEC silver.load_nycsilver; in your management system.
 */
 
 
