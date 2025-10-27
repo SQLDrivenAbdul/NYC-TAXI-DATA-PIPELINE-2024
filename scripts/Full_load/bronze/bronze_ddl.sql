@@ -1,5 +1,5 @@
 /*
-At every run of this script, the table is dropped and recreated.
+At every run of this script, the table is dropped and a new one recreated.
 */
 
 
