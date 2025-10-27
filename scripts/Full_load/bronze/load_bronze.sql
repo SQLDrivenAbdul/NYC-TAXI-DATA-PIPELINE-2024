@@ -1,9 +1,12 @@
 /*
-The stored procedure pulls data from the source file into the defined table.
 
-To execute it, you simply run  EXEC bronze.load_nycbronze;
 
-In situations where the procedure fails to load the data, the scripts reports information about the error encountered.
+At every run, the bronze.yellow_taxi table is truncated and reloaded
+
+For easy execution, the code is wrapped in a stored procedure AS bronze.load_nycbronze.
+To use the stored procedure, you simply run  ``EXEC bronze.load_nycbronze`` in your management system.
+
+Case when the procedure fails to load the data, the script has been designed to  report  some important information about the error encountered for easy debugging.
 */
 EXEC bronze.load_nycbronze;
 
