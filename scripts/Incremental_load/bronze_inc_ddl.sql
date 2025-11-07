@@ -25,8 +25,6 @@ CREATE TABLE [bronze].[nyc_inc](
 	[airport_fee] [float] NULL
 ) 
 
-
-
 /*
 I created a trigger to the bronze table that automatically takes the INSERTED (the new data loaded), transform it and load to the silver layer incrementally 
 without overwritting the existing data. No duplication allowed
@@ -97,6 +95,27 @@ INSERT INTO silver.nyc_inc (VendorID, vendor_name, tpep_pickup_datetime, tpep_dr
 			GETDATE() AS load_datetime
 	FROM INSERTED
 END
+
+
+/*
+========= DATA LOADING POINT =========
+Below is the script that loads the data into the bronze layer
+The FIRE_TRIGGERS option is added to ensure the trigger works while using using the BULK INSERT approach, without it, the bronze layer will 
+be populated but the  trigger will 'silenced' causing it not to fire at all.
+*/
+
+
+BULK INSERT bronze.nyc_inc
+FROM 'C:\Users\USER\OneDrive\Desktop\NYC_ETL_PRROJECT FILE\yellow_tripdata_2024-01.csv' -- testing with january file
+WITH
+(
+FIRSTROW = 2,
+FIELDTERMINATOR = ',',
+TABLOCK,
+FIRE_TRIGGERS)
+
+
+
 
 
 
