@@ -1,7 +1,7 @@
 /*
 
 This script creates the database and schema objects for the three layers of the ETL process.
-The script deletes the already esisting table with it values then create another.
+If there is any database with the name,it deletes it and create another one.
 */
 
 
