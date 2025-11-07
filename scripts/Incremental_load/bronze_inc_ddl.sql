@@ -28,7 +28,7 @@ CREATE TABLE [bronze].[nyc_inc](
 
 
 /*
-I created a trigger that automatically takes the INSERTED (the new data loaded), transform it and load to the silver layer incrementally 
+I created a trigger to the bronze table that automatically takes the INSERTED (the new data loaded), transform it and load to the silver layer incrementally 
 without overwritting the existing data. No duplication allowed
 */
 
